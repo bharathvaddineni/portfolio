@@ -75,7 +75,7 @@ const ContactPage = () => {
               innovation and dreams fulfilled together! ✨
             </Typography>
           </Box>
-          <Box display="flex" justifyContent="center">
+          <Box display="flex" flexWrap={"wrap"} justifyContent="center">
             {" "}
             {/* Center align links */}
             <ContactLink

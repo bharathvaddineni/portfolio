@@ -80,6 +80,7 @@ const ContactSection = styled("section")({
   textAlign: "center",
   marginBottom: "40px",
   display: "flex",
+  flexWrap: "wrap",
   justifyContent: "space-around",
   fontFamily: "Arial, sans-serif",
 });
