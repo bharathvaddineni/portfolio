@@ -37,6 +37,12 @@ const CategoryTitle = styled("h3")({
   color: "#fff",
 });
 
+const CategoryDescription = styled("p")({
+  marginTop: "10px",
+  marginBottom: "10px",
+  color: "#aaa",
+});
+
 const SkillTitle = styled(Typography)({
   fontSize: "1.2rem",
   fontWeight: "bold",
@@ -56,8 +62,7 @@ const SkillContainer = styled(Box)({
 const RangeBar = styled(LinearProgress)({
   width: "200px",
   marginLeft: "20px",
-  height: "20px",
-  borderRadius: "5px",
+  height: "12px",
 });
 
 const Skills = () => {
@@ -91,6 +96,7 @@ const Skills = () => {
           {categories.map((category, index) => (
             <React.Fragment key={index}>
               <CategoryTitle>{category.name}</CategoryTitle>
+              <CategoryDescription>{category.description}</CategoryDescription>
               <Grid container spacing={2}>
                 {category.skills.map((skill, skillIndex) => (
                   <Grid item xs={12} sm={6} key={skillIndex}>

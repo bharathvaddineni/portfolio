@@ -54,6 +54,7 @@
 "skills": [
     {
       "name": "Programming Languages",
+      "description": "In programming languages, I boast a diverse skill set encompassing Java, JavaScript, and TypeScript. With Java, I specialize in building robust backend systems and enterprise applications, leveraging its object-oriented principles. JavaScript and TypeScript empower me to craft dynamic and interactive user interfaces for web applications, ensuring a seamless user experience with their versatile capabilities.",
       "skills": [
         { "name": "Java", "level": "Intermediate" },
         { "name": "JavaScript", "level": "Advanced" },
@@ -64,6 +65,7 @@
     },
     {
       "name": "Frameworks/Libraries",
+      "description": "Moving to frameworks and libraries, my expertise shines in React.js, Redux, and Node.js. With React.js, I excel in developing modern web applications with reusable components, optimizing performance and scalability. Redux enables me to manage complex application states effectively, ensuring smooth user interactions and data flow. Additionally, my skills in Node.js empower me to build server-side applications and APIs, facilitating seamless communication between the client and server.",
       "skills": [
         { "name": "React.js", "level": "Advanced" },
         { "name": "Redux", "level": "Intermediate" },
@@ -75,6 +77,7 @@
     },
     {
       "name": "Web Technologies",
+      "description":"When it comes to web technologies, I possess a solid understanding of MVC architecture and RESTful APIs. With MVC architecture, I structure web applications efficiently, enhancing maintainability and scalability. My advanced knowledge of RESTful APIs enables me to design and implement interfaces that ensure efficient data exchange and integration across platforms.",
       "skills": [
         { "name": "MVC Architecture", "level": "Intermediate" },
         { "name": "RESTful APIs", "level": "Advanced" }
@@ -82,6 +85,7 @@
     },
     {
       "name": "Database Technologies",
+      "description": "In database technologies, I am proficient in MySQL, PostgreSQL, and NoSQL. I design optimized database schemas, execute efficient queries, and ensure data integrity and performance. This expertise allows me to manage data effectively, adapting to diverse data storage needs and optimizing data retrieval.",
       "skills": [
         { "name": "MySQL", "level": "Advanced" },
         { "name": "PostgreSQL", "level": "Intermediate" },
@@ -90,12 +94,14 @@
     },
     {
       "name": "Scripting/Shells",
+      "description": "Furthermore, my scripting and shell skills, particularly in Bash (Unix Shell Scripting), enable me to automate tasks and streamline deployment processes across diverse environments.",
       "skills": [
         { "name": "Bash (Unix Shell Scripting)", "level": "Intermediate" }
       ]
     },
     {
       "name": "Tools/IDEs",
+      "description":"Leveraging powerful tools and IDEs such as Visual Studio Code, GitHub, and Postman, I optimize productivity and collaboration, ensuring efficient coding, version control, and API testing and debugging.",
       "skills": [
         { "name": "Visual Studio Code", "level": "Advanced" },
         { "name": "GitHub", "level": "Advanced" },
@@ -105,6 +111,7 @@
     },
     {
       "name": "Cloud Services",
+      "description":"Cloud services play a vital role in my skill set, particularly AWS (EC2, S3, IAM) and AWS CloudWatch. I deploy and manage scalable applications on AWS, leveraging its infrastructure and services for scalability and reliability. With AWS CloudWatch, I monitor application performance and resource utilization, ensuring optimal scalability and uptime.",
       "skills": [
         { "name": "AWS (EC2, S3, IAM)", "level": "Intermediate" },
         { "name": "AWS CloudWatch", "level": "Intermediate" }
@@ -112,6 +119,7 @@
     },
     {
       "name": "Operating Systems",
+      "description": "Lastly, my proficiency in operating systems such as Windows and Linux allows me to adapt seamlessly to diverse development and deployment environments. I leverage the strengths of each operating system to drive project success, ensuring smooth operations across the board.",
       "skills": [
         { "name": "Windows", "level": "Intermediate" },
         { "name": "Linux", "level": "Intermediate" }
