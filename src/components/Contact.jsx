@@ -1,7 +1,8 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
-import { Container, Box, TextField, Button } from "@mui/material";
+import { Container, Box, TextField, Button, Typography } from "@mui/material";
 import { styled } from "@mui/system";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaSalesforce } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const RootContainer = styled("div")({
@@ -11,7 +12,7 @@ const RootContainer = styled("div")({
   padding: "1rem",
   justifyContent: "center",
   alignItems: "center",
-  fontFamily: "cursive",
+  fontFamily: "'Open Sans', sans-serif",
 });
 
 const Section = styled("section")({
@@ -22,7 +23,6 @@ const Section = styled("section")({
   boxShadow: "0px 0px 10px rgba(255, 255, 255, 0.1)",
   textAlign: "justify",
   marginBottom: "40px",
-  
 });
 
 const Title = styled("h2")({
@@ -36,7 +36,6 @@ const Form = styled("form")({
   display: "flex",
   flexDirection: "column",
   gap: "20px",
-
 });
 
 const ContactLink = styled("a")({
@@ -62,15 +61,23 @@ const Icon = styled("span")({
 const ContactPage = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Add your form submission logic here
   };
 
   return (
     <RootContainer>
       <Container>
         <Section>
-          <Title>Contact Me</Title>
-          <Box display="flex" justifyContent="space-around">
+          <Title>Let's Conect</Title>
+          <Box textAlign="center" mb={4}>
+            <Typography variant="body1" sx={{color:'white'}}>
+              🌟 Seeking fresh adventures and opportunities to create magic, I'm
+              extending an invitation to journey with me. Let's craft stories of
+              innovation and dreams fulfilled together! ✨
+            </Typography>
+          </Box>
+          <Box display="flex" justifyContent="center">
+            {" "}
+            {/* Center align links */}
             <ContactLink
               href="https://www.linkedin.com/in/bharath-kumar-vaddineni/"
               target="_blank"
@@ -97,17 +104,22 @@ const ContactPage = () => {
               </Icon>{" "}
               Email
             </ContactLink>
+            <ContactLink
+              href="https://www.salesforce.com/trailblazer/bvaddineni"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon>
+                <FaSalesforce />
+              </Icon>{" "}
+              Salesforce
+            </ContactLink>
           </Box>
         </Section>
-        <Section sx={{backgroundColor:'white'}}>
+        <Section sx={{ backgroundColor: "white" }}>
           <Form onSubmit={handleSubmit}>
             <TextField label="Name" variant="outlined" />
-            <TextField
-              label="Email"
-              variant="outlined"
-              type="email"
-              required
-            />
+            <TextField label="Email" variant="outlined" type="email" required />
             <TextField
               label="Message"
               variant="outlined"
@@ -115,7 +127,12 @@ const ContactPage = () => {
               rows={4}
               required
             />
-            <Button type="submit" variant="contained" color="primary" sx={{maxWidth:'200px'}}>
+            <Button
+              type="submit"
+              variant="contained"
+              color="primary"
+              sx={{ maxWidth: "200px" }}
+            >
               Send Message
             </Button>
           </Form>

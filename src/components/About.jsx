@@ -1,31 +1,32 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import { Container, Button, Box } from "@mui/material";
+import { Container, Button } from "@mui/material";
 import { styled } from "@mui/system";
-// import pic1 from "../assets/pic1.png";
-// import pic2 from "../assets/pic2.png";
 import resume from "../assets/resume.pdf";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaSalesforce } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import Carousel from "react-bootstrap/Carousel";
+import 'bootstrap/dist/css/bootstrap.css';
 
 const RootContainer = styled("div")({
-  backgroundColor: "#121212", // dark background color
+  backgroundColor: "#121212",
   minHeight: "100vh",
   display: "flex",
   padding: "1rem",
   justifyContent: "center",
   alignItems: "center",
-  fontFamily: "cursive", // cursive font
+  fontFamily: "'Open Sans', sans-serif",
 });
 
 const Section = styled("section")({
   width: "100%",
   padding: "40px",
-  backgroundColor: "#1e1e1e", // slightly lighter background color
+  backgroundColor: "#1e1e1e",
   borderRadius: "10px",
-  boxShadow: "0px 0px 10px rgba(255, 255, 255, 0.1)", // lighter shadow
-  textAlign: "justify", // justify content
+  boxShadow: "0px 0px 10px rgba(255, 255, 255, 0.1)",
+  textAlign: "justify",
   marginBottom: "40px",
 });
 
@@ -33,19 +34,21 @@ const Title = styled("h2")({
   fontSize: "2.5rem",
   fontWeight: "bold",
   marginBottom: "20px",
-  color: "#fff", // white text color
+  color: "#fff",
 });
 
 const Content = styled("p")({
   fontSize: "1.2rem",
   lineHeight: "1.6",
-  color: "#ccc", // light text color
-  marginBottom: "20px", // Add padding to content
+  color: "#ccc",
+  marginBottom: "20px",
 });
 
 const ButtonGroup = styled("div")({
   display: "flex",
-  justifyContent: "space-between",
+  justifyContent: "center",
+  flexWrap: "wrap",
+  gap: "10px",
   marginTop: "20px",
 });
 
@@ -53,99 +56,28 @@ const StyledButton = styled(Button)({
   fontSize: "1rem",
   fontWeight: "bold",
   borderRadius: "20px",
+  border: "1px solid gray",
   padding: "10px 20px",
-  color: "#fff", // white text color
+  color: "#fff",
+
   "@media (max-width: 630px)": {
-    padding: "8px", // Adjust padding for smaller screens
-    fontSize: "0.8rem", // Adjust font size for smaller screens
+    padding: "8px",
+    fontSize: "0.8rem",
   },
   "&.MuiButton-containedPrimary": {
-    backgroundColor: "#5a5a5a", // dark grey button color
+    backgroundColor: "#3a3a3a",
     "&:hover": {
-      backgroundColor: "#3a3a3a", // darker shade on hover
-    },
-  },
-  "&.MuiButton-containedSecondary": {
-    backgroundColor: "#696969", // dark grey button color
-    "&:hover": {
-      backgroundColor: "#4a4a4a", // darker shade on hover
+      backgroundColor: "#000",
     },
   },
 });
 
-const ProjectTitle = styled("h3")({
-  fontSize: "2rem",
-  fontWeight: "bold",
-  marginBottom: "20px",
-  color: "#fff", // white text color
-});
-
-const ProjectDescription = styled("p")({
-  fontSize: "1.2rem",
-  lineHeight: "1.6",
-  color: "#ccc", // light text color
-  marginBottom: "20px", // Add some gap between description and image
-});
-
-const ProjectSkills = styled("p")({
-  fontSize: "1rem",
-  color: "#fff", // light text color
-  textAlign: "center", // Align skills to the center
-  marginBottom: "20px", // Add margin for spacing
-  fontWeight: "bold",
-  display:"flex",
-  direction:"row",
-  gap:"10px"
-});
-
-const ProjectImage = styled("img")({
-  width: "100%", // Ensure image takes full width
-  height: "auto", // Maintain aspect ratio
-  marginBottom: "20px", // Add gap between image and skills
-});
-
-const Carousel = styled("div")({
-  overflow: "hidden",
-  position: "relative",
-  width: "100%",
-  height: "auto",
-  marginBottom: "20px", // Add margin-bottom for gap between carousel and buttons
-});
-
-const CarouselTrack = styled("div")({
-  display: "flex",
-  transition: "transform 0.5s ease",
-});
-
-const CarouselItem = styled("div")({
-  flex: "0 0 100%",
-});
-
-const CarouselButton = styled(Box)({
-  width: "10px",
-  height: "10px",
-  borderRadius: "50%",
-  backgroundColor: "#fff",
-  margin: "0 5px",
-  cursor: "pointer",
-  transition: "background-color 0.3s",
-  "&:hover": {
-    backgroundColor: "#ccc",
-  },
-});
-
-const ActiveCarouselButton = styled(CarouselButton)({
-  backgroundColor: "#ff0000", // Change background color to red for active button
-});
-
-// Contact section styling
 const ContactSection = styled("section")({
   width: "100%",
   padding: "40px",
-  backgroundColor: "#101010", // slightly lighter background color
+  backgroundColor: "#101010",
   borderRadius: "10px",
-  //boxShadow: '0px 0px 10px rgba(255, 255, 255, 0.1)', // lighter shadow
-  textAlign: "center", // center content
+  textAlign: "center",
   marginBottom: "40px",
   display: "flex",
   justifyContent: "space-around",
@@ -173,8 +105,6 @@ const Icon = styled("span")({
 });
 
 const AboutPage = () => {
-  const [currentSlide, setCurrentSlide] = React.useState(0);
-
   const [projects, setProjects] = useState([]);
   console.log("projects: ", projects);
 
@@ -191,10 +121,6 @@ const AboutPage = () => {
 
     fetchProjects();
   }, []);
-
-  const handleClick = (index) => {
-    setCurrentSlide(index);
-  };
 
   return (
     <RootContainer>
@@ -233,81 +159,23 @@ const AboutPage = () => {
               </a>
             </StyledButton>
             <Link to="/skills" style={{ textDecoration: "none" }}>
-              <StyledButton variant="contained" color="secondary">
+              <StyledButton variant="contained" color="primary">
                 Skills
               </StyledButton>
             </Link>
           </ButtonGroup>
         </Section>
         <Section>
-          <Carousel>
-            <CarouselTrack
-              style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-            >
-              {projects.length > 0 &&
-                projects.map((project, index) => (
-                  <CarouselItem key={index}>
-                    <ProjectTitle>{project.title}</ProjectTitle>
-                    <ProjectDescription>
-                      {project.description}
-                    </ProjectDescription>
-                    <ProjectImage src={project.image} alt={project.title} />
-                    <div className="flex flex-row justify-center space-x-4">
-                    <p className="text-white font-bold">Skills: </p>
-                    <ProjectSkills>
-                {project.skills.map((skill, index) => (
-                  <div key={index}> 
-                    {skill.name}{" "}
-                  </div>
-                ))}
-              </ProjectSkills>
-                    </div>
-                    
-                  </CarouselItem>
-                ))}
-              {/* <CarouselItem>
-                <ProjectTitle>Movie Data Visualization</ProjectTitle>
-                <ProjectDescription>
-                  This project is a movie data visualization web application
-                  built with React.js. It utilizes data fetched from MongoDB to
-                  display various charts and information about movies, including
-                  genre popularity, movies released in each decade, and more.
-                </ProjectDescription>
-                <ProjectImage src={pic2} alt="Movie Data Visualization" />
-                <ProjectSkills>
-                  Skills: React.js · Express.js · Node.js · Tailwind CSS ·
-                  MongoDB
-                </ProjectSkills>
-              </CarouselItem>
-              <CarouselItem>
-                <ProjectTitle>Project Management App</ProjectTitle>
-                <ProjectDescription>
-                  The project is a web-based project management application
-                  built using Vue.js. It allows users to create, manage, and
-                  track tasks and projects, facilitating efficient project
-                  management and collaboration among team members. The
-                  application features include task creation and task updates.
-                  It also provides a visual representation of project progress
-                  and task completion status.
-                </ProjectDescription>
-                <ProjectImage src={pic1} alt="Project Management App" />
-                <ProjectSkills>
-                  Skills: Vue.js · Vuex · Tailwind CSS
-                </ProjectSkills>
-              </CarouselItem> */}
-            </CarouselTrack>
+          <Title>Projects</Title>
+          <Carousel controls={true} touch={true}>
+            {projects.length > 0 &&
+              projects.map((project, index) => (
+                <Carousel.Item key={index}>
+                  <h1 className="text-white mb-4">{project.title}</h1>
+                  <img src={project.image} alt="" />
+                </Carousel.Item>
+              ))}
           </Carousel>
-          <Box display="flex" justifyContent="center">
-            {[0, 1].map((index) => (
-              <React.Fragment key={index}>
-                {index === currentSlide ? (
-                  <ActiveCarouselButton onClick={() => handleClick(index)} />
-                ) : (
-                  <CarouselButton onClick={() => handleClick(index)} />
-                )}
-              </React.Fragment>
-            ))}
-          </Box>
         </Section>
         <ContactSection>
           <ContactLink
@@ -335,6 +203,12 @@ const AboutPage = () => {
               <MdEmail />
             </Icon>{" "}
             Email
+          </ContactLink>
+          <ContactLink href="https://www.salesforce.com/trailblazer/bvaddineni">
+            <Icon>
+              <FaSalesforce />
+            </Icon>{" "}
+            Salesforce
           </ContactLink>
         </ContactSection>
       </Container>

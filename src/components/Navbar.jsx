@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // Navbar.jsx
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
@@ -6,20 +7,20 @@ import { Menu as MenuIcon } from '@mui/icons-material';
 import { styled } from '@mui/system';
 
 const CustomAppBar = styled(AppBar)({
-  backgroundColor: '#292929', // Dark gray background color
+  backgroundColor: '#292929',
   boxShadow: 'none',
-  height: '64px', // Set the height to a fixed value
+  height: '64px',
 });
 
 const CustomTypography = styled(Typography)({
-  fontFamily: 'Arial, sans-serif', // Font for both title and menu items
+  fontFamily: 'Arial, sans-serif',
   fontSize: '1.8rem',
   fontWeight: 600,
   letterSpacing: '1px',
   textDecoration: 'none',
-  color: '#FFFFFF', // White color for both title and menu items
+  color: '#FFFFFF',
   '&:hover': {
-    color: '#CCCCCC', // Light gray color on hover
+    color: '#CCCCCC',
   },
 });
 
@@ -41,7 +42,7 @@ const Navbar = () => {
       <Toolbar sx={{ justifyContent: 'space-between', height: '100%' }}>
         <Typography variant="h6" component="div">
           <CustomTypography component={Link} to="/">
-            My Portfolio
+            Bharath
           </CustomTypography>
         </Typography>
         {isMobile ? (
@@ -68,6 +69,14 @@ const Navbar = () => {
                 horizontal: 'right',
               }}
             >
+              <MenuItem
+                component={Link}
+                to="/"
+                selected={location.pathname === '/projects'}
+                onClick={handleMenuClose}
+              >
+                About
+              </MenuItem>
               <MenuItem
                 component={Link}
                 to="/projects"
@@ -105,6 +114,16 @@ const Navbar = () => {
         ) : (
           <nav>
             <ul style={{ display: 'flex', listStyleType: 'none', margin: 0, padding: 0 }}>
+            <li>
+                <MenuItem
+                  component={Link}
+                  to="/"
+                  selected={location.pathname === '/'}
+                  sx={{ color: location.pathname === '/' ? '#FFFFFF' : '#CCCCCC', backgroundColor: 'transparent' }}
+                >
+                  About
+                </MenuItem>
+              </li>
               <li>
                 <MenuItem
                   component={Link}

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import React, { useState, useEffect } from "react";
 import { Container, Button, Box, Modal } from "@mui/material";
@@ -12,7 +13,7 @@ const RootContainer = styled("div")({
   padding: "1rem",
   justifyContent: "center",
   alignItems: "center",
-  fontFamily: "cursive",
+  fontFamily: "'Open Sans', sans-serif",
 });
 
 const Section = styled("section")({
@@ -91,7 +92,7 @@ const ProjectImage = styled("img")({
 const SkillLogo = styled("img")({
   width: "30px",
   height: "30px",
-  marginRight: "15px", // Add some spacing between logos
+  marginRight: "15px",
 });
 
 const VideoModal = ({ open, onClose, videoUrl }) => {

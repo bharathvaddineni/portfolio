@@ -10,7 +10,7 @@ const RootContainer = styled("div")({
   padding: "1rem",
   justifyContent: "center",
   alignItems: "center",
-  fontFamily: "cursive",
+  fontFamily: "'Open Sans', sans-serif",
 });
 
 const Section = styled("section")({
@@ -76,7 +76,6 @@ const Skills = () => {
     fetchSkills();
   }, []);
 
-  // Define proficiency level range for each level
   const proficiencyRange = {
     Beginner: 25,
     Intermediate: 50,
