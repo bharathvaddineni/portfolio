@@ -40,6 +40,9 @@ const CategoryDescription = styled("p")({
   marginTop: "10px",
   marginBottom: "10px",
   color: "#aaa",
+  "@media (max-width: 630px)": {
+    textAlign: "left",
+  },
 });
 
 const SkillTitle = styled(Typography)({
