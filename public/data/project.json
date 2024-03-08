@@ -1,0 +1,122 @@
+{ "projects":
+  [
+  {
+    "title": "Project Management App",
+    "description": "The project is a web-based project management application built using Vue.js. It allows users to create, manage, and track tasks and projects, facilitating efficient project management and collaboration among team members. The application features include task creation and task updates. It also provides a visual representation of project progress and task completion status.",
+    "image": "/pic2.png",
+    "video": "/vid1.mp4",
+    "githubLink": "https://github.com/bharathvaddineni/project-management.git",
+    "skills": [
+        {
+            "name": "Vue.js",
+            "logo": "/vue.png"
+          },
+          {
+            "name": "Vuex",
+            "logo": "/vuex.png"
+          },
+          {
+            "name": "Tailwind CSS",
+            "logo": "/tailwind.png"
+          }
+    ]
+  },
+  {
+    "title": "Movie Data Visualization",
+    "description": "This project is a movie data visualization web application built with React.js. It utilizes data fetched from MongoDB to display various charts and information about movies, including genre popularity, movies released in each decade, and more.",
+    "image": "/pic1.png",
+    "video": "/vid2.mp4",
+    "githubLink": "https://github.com/bharathvaddineni/movie-data-visualization.git",
+    "skills": [
+        {
+            "name": "React.js",
+            "logo": "/react.png"
+          },
+          {
+            "name": "Express.js",
+            "logo": "/express.png"
+          },
+          {
+            "name": "Node.js",
+            "logo": "/node.png"
+          },
+          {
+            "name": "MongoDB",
+            "logo": "/mongodb.png"
+          },
+          {
+            "name": "Tailwind CSS",
+            "logo": "/tailwind.png"
+          }
+    ]
+  }
+],
+"skills": [
+    {
+      "name": "Programming Languages",
+      "skills": [
+        { "name": "Java", "level": "Intermediate" },
+        { "name": "JavaScript", "level": "Advanced" },
+        { "name": "TypeScript", "level": "Advanced" },
+        { "name": "HTML5", "level": "Intermediate" },
+        { "name": "CSS", "level": "Intermediate" }
+      ]
+    },
+    {
+      "name": "Frameworks/Libraries",
+      "skills": [
+        { "name": "React.js", "level": "Advanced" },
+        { "name": "Redux", "level": "Intermediate" },
+        { "name": "Node.js", "level": "Intermediate" },
+        { "name": "Material-UI", "level": "Advanced" },
+        { "name": "Jest", "level": "Intermediate" },
+        { "name": "Next.js", "level": "Advanced" }
+      ]
+    },
+    {
+      "name": "Web Technologies",
+      "skills": [
+        { "name": "MVC Architecture", "level": "Intermediate" },
+        { "name": "RESTful APIs", "level": "Advanced" }
+      ]
+    },
+    {
+      "name": "Database Technologies",
+      "skills": [
+        { "name": "MySQL", "level": "Advanced" },
+        { "name": "PostgreSQL", "level": "Intermediate" },
+        { "name": "NoSQL", "level": "Intermediate" }
+      ]
+    },
+    {
+      "name": "Scripting/Shells",
+      "skills": [
+        { "name": "Bash (Unix Shell Scripting)", "level": "Intermediate" }
+      ]
+    },
+    {
+      "name": "Tools/IDEs",
+      "skills": [
+        { "name": "Visual Studio Code", "level": "Advanced" },
+        { "name": "GitHub", "level": "Advanced" },
+        { "name": "Postman", "level": "Intermediate" },
+        { "name": "VS Code", "level": "Advanced" }
+      ]
+    },
+    {
+      "name": "Cloud Services",
+      "skills": [
+        { "name": "AWS (EC2, S3, IAM)", "level": "Intermediate" },
+        { "name": "AWS CloudWatch", "level": "Intermediate" }
+      ]
+    },
+    {
+      "name": "Operating Systems",
+      "skills": [
+        { "name": "Windows", "level": "Intermediate" },
+        { "name": "Linux", "level": "Intermediate" }
+      ]
+    }
+  ]
+  
+}

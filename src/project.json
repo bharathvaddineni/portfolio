@@ -1,0 +1,26 @@
+{ "projects":
+  [
+  {
+    "title": "Project Management App",
+    "description": "The project is a web-based project management application built using Vue.js. It allows users to create, manage, and track tasks and projects, facilitating efficient project management and collaboration among team members. The application features include task creation and task updates. It also provides a visual representation of project progress and task completion status.",
+    "image": "/pic1.png",
+    "skills": [
+      "Vue.js",
+      "Vuex",
+      "Tailwind CSS"
+    ]
+  },
+  {
+    "title": "Movie Data Visualization",
+    "description": "This project is a movie data visualization web application built with React.js. It utilizes data fetched from MongoDB to display various charts and information about movies, including genre popularity, movies released in each decade, and more.",
+    "image": "/pic2.png",
+    "skills": [
+      "React.js",
+      "Express.js",
+      "Node.js",
+      "Tailwind CSS",
+      "MongoDB"
+    ]
+  }
+]
+}
