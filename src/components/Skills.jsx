@@ -24,15 +24,14 @@ const Section = styled("section")({
 });
 
 const Title = styled("h2")({
-  fontSize: "2.5rem",
+  fontSize: "2rem",
   fontWeight: "bold",
   marginBottom: "20px",
   color: "#fff",
 });
 
 const CategoryTitle = styled("h3")({
-  fontSize: "2rem",
-  fontWeight: "bold",
+  fontSize: "1.5rem",
   marginBottom: "10px",
   color: "#fff",
 });
@@ -44,8 +43,7 @@ const CategoryDescription = styled("p")({
 });
 
 const SkillTitle = styled(Typography)({
-  fontSize: "1.2rem",
-  fontWeight: "bold",
+  fontSize: "1rem",
   color: "#fff",
 });
 

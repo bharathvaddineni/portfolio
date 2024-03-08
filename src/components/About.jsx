@@ -31,7 +31,7 @@ const Section = styled("section")({
 });
 
 const Title = styled("h2")({
-  fontSize: "2.5rem",
+  fontSize: "2rem",
   fontWeight: "bold",
   marginBottom: "20px",
   color: "#fff",

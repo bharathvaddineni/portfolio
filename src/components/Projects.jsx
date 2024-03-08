@@ -27,7 +27,7 @@ const Section = styled("section")({
 });
 
 const Title = styled("h2")({
-  fontSize: "2.5rem",
+  fontSize: "2rem",
   fontWeight: "bold",
   marginBottom: "20px",
   color: "#fff",
@@ -59,14 +59,13 @@ const StyledButton = styled(Button)({
 });
 
 const ProjectTitle = styled("h3")({
-  fontSize: "2rem",
-  fontWeight: "bold",
+  fontSize: "1.5rem",
   marginBottom: "20px",
   color: "#fff",
 });
 
 const ProjectDescription = styled("p")({
-  fontSize: "1.2rem",
+  fontSize: "1rem",
   lineHeight: "1.6",
   color: "#ccc",
   marginBottom: "20px",
