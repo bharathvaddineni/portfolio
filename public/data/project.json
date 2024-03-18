@@ -1,5 +1,26 @@
 { "projects":
   [
+    {
+    "title": "TaskMate - Your Simple Todo List",
+    "description": "The React Todo App with Material UI and Firebase Integration is a web application designed to help users manage their tasks efficiently. This app provides a user-friendly interface built with React.js and Material UI components, along with Firebase backend services for real-time data synchronization and authentication.",
+    "image": "/todo.png",
+    "video": "/todo.mp4",
+    "githubLink": "https://github.com/bharathvaddineni/todoapp.git",
+    "skills": [
+        {
+            "name": "React.js",
+            "logo": "/react.png"
+          },
+          {
+            "name": "MaterialUI",
+            "logo": "/materail.png"
+          },
+          {
+            "name": "Firebase",
+            "logo": "/firebase.png"
+          }
+    ]
+  },
   {
     "title": "Project Management App",
     "description": "The project is a web-based project management application built using Vue.js. It allows users to create, manage, and track tasks and projects, facilitating efficient project management and collaboration among team members. The application features include task creation and task updates. It also provides a visual representation of project progress and task completion status.",
