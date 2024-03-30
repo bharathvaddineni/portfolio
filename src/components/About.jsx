@@ -42,9 +42,6 @@ font-size: 1.2rem;
 line-height: 1.6;
 color: #222;
 margin-bottom: 20px;
-margin-right: 5px;
-float: left;
-max-width: 70%;
 font-style: italic;
 &::before,
 &::after {
