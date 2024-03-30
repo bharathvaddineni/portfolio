@@ -129,24 +129,22 @@ const AboutPage = () => {
         <Section>
           <Title>About Me</Title>
           <Content>
-            Hi there! I'm Bharath Kumar, a passionate web developer. With a
-            background in web development, I bring 5 years of experience to the
-            table. My journey in web development started when I discovered my
-            love for coding during my college days.
-          </Content>
-          <Content>
-            Throughout my career, I've had the opportunity to work on various
-            projects ranging from e-commerce websites to web applications. My
-            approach to work is focused on delivering high-quality solutions
-            that meet the client's needs.
-          </Content>
-          <Content>
-            When I'm not working, you can find me exploring new technologies,
-            playing guitar, or spending time with my family. I'm always eager to
-            learn and grow in my field.
-          </Content>
-          <Content>
-            Let's connect and create something amazing together!
+           Hey there, I'm Bharath Kumar, and I'm all about making the web come
+            alive. My journey into the world of web development began during my
+            college days, where I discovered the thrill of bringing lines of
+            code to life. Over the past 5 years, I've immersed myself in
+            everything web-related, from crafting sleek e-commerce platforms to
+            engineering innovative web applications. Each project has been a
+            puzzle to solve, a challenge to conquer, and I've loved every minute
+            of it. But it's not just about the code for me. I'm always on the
+            lookout for new skills to master, which led me to dive into
+            Salesforce and broaden my toolkit even further. And when I'm not
+            knee-deep in code, you'll find me exploring the latest tech trends,
+            or simply enjoying the company of my loved ones. I'm a firm believer
+            in the power of collaboration and the magic that happens when great
+            minds come together. So, if you're passionate about creating
+            remarkable digital experiences, let's connect and see what we can
+            build together.
           </Content>
           <ButtonGroup>
             <Link to="/projects" style={{ textDecoration: "none" }}>
