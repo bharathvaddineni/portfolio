@@ -37,12 +37,20 @@ const Title = styled("h2")({
   color: "#fff",
 });
 
-const Content = styled("p")({
-  fontSize: "1.2rem",
-  lineHeight: "1.6",
-  color: "#ccc",
-  marginBottom: "20px",
-});
+const Content = styled("p")(`
+font-size: 1.2rem;
+line-height: 1.6;
+color: #222;
+margin-bottom: 20px;
+margin-right: 5px;
+float: left;
+max-width: 70%;
+font-style: italic;
+&::before,
+&::after {
+  content: '"';
+}
+`);
 
 const ButtonGroup = styled("div")({
   display: "flex",
