@@ -12,7 +12,7 @@
             "logo": "/react.png"
           },
           {
-            "name": "MaterialUIy",
+            "name": "MaterialUI",
             "logo": "/materail.png"
           },
           {
@@ -104,7 +104,36 @@
         { "name": "RESTful APIs", "level": "Advanced" }
       ]
     },
+  {
+  "name": "Salesforce Technologies",
+  "description": "In Salesforce technologies, I am proficient in managing Sales Cloud, CRM, and creating custom solutions. My skills include Apex development, Lightning Web Components (LWC), SOQL, and administration of Salesforce applications to ensure efficient business processes.",
+  "skills": [
     {
+      "name": "Sales Cloud",
+      "level": "Beginner"
+    },
+    {
+      "name": "CRM",
+      "level": "Beginner"
+    },
+    {
+      "name": "Apex",
+      "level": "Beginner"
+    },
+    {
+      "name": "Lightning Web Components (LWC)",
+      "level": "Beginner"
+    },
+    {
+      "name": "SOQL",
+      "level": "Beginner"
+    },
+    {
+      "name": "Administration",
+      "level": "Beginner"
+    }
+  ]
+},    {
       "name": "Database Technologies",
       "description": "In database technologies, I am proficient in MySQL, PostgreSQL, and NoSQL. I design optimized database schemas, execute efficient queries, and ensure data integrity and performance. This expertise allows me to manage data effectively, adapting to diverse data storage needs and optimizing data retrieval.",
       "skills": [
