@@ -40,7 +40,7 @@ const Title = styled("h2")({
 const Content = styled("p")(`
 font-size: 1.2rem;
 line-height: 1.6;
-color: #222;
+color: #fff;
 margin-bottom: 20px;
 font-style: italic;
 &::before,
