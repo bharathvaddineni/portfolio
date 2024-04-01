@@ -183,7 +183,7 @@ const AboutPage = () => {
         </Section>
         <ContactSection>
           <ContactLink
-            href="https://www.linkedin.com/"
+            to="https://www.linkedin.com/in/bharath-kumar-vaddineni/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -193,7 +193,7 @@ const AboutPage = () => {
             LinkedIn
           </ContactLink>
           <ContactLink
-            href="https://github.com/"
+            to="https://github.com/bharathvaddineni/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -202,13 +202,15 @@ const AboutPage = () => {
             </Icon>{" "}
             GitHub
           </ContactLink>
-          <ContactLink href="mailto:example@example.com">
+          <ContactLink to="mailto:vaddineni.bharath@gmail.com">
             <Icon>
               <MdEmail />
             </Icon>{" "}
             Email
           </ContactLink>
-          <ContactLink href="https://www.salesforce.com/trailblazer/bvaddineni">
+          <ContactLink to="https://www.salesforce.com/trailblazer/bvaddineni"
+           target="_blank"
+            rel="noopener noreferrer" >
             <Icon>
               <FaSalesforce />
             </Icon>{" "}
