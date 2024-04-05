@@ -4,7 +4,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import { Container, Button } from "@mui/material";
 import { styled } from "@mui/system";
-import resume from "../assets/resume.pdf";
+import resume from "../resume.pdf";
 import { FaLinkedin, FaGithub, FaSalesforce } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Carousel from "react-bootstrap/Carousel";
